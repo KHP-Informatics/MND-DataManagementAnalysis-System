@@ -1,0 +1,10 @@
+.swp
+.Makefile.swp
+.DS_Store
+containerized/ngs_docker_debian/private_builds/*
+containerized/ngs_docker_debian/private_builds/novoalign/*
+containerized/ngs_docker_debian/private_builds/novoalign/novoalign.lic
+containerized/ngs_docker_debian/private_builds/novoalign/novosort*
+containerized/ngs_docker_debian/private_builds/novoalign/novocraft*
+containerized/ngs_docker_debian/private_builds/gatk/*
+containerized/ngs_docker_debian/private_builds/gatk/GenomeA*
