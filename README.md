@@ -64,7 +64,7 @@ A python toolkit providing best-practice pipelines for fully automated high thro
 
 https://github.com/chapmanb/bcbio-nextgen
 
-## iRODS utilities 
+## iRODS  
 
 ### iRODS deployment
 
@@ -78,7 +78,7 @@ https://github.com/chapmanb/bcbio-nextgen
 
 ### Metadata
 
-## tranSMART utilities
+## tranSMART 
 
 ### tranSMART deployment
 
@@ -86,7 +86,7 @@ https://github.com/chapmanb/bcbio-nextgen
 
 ### tranSMART extras
 
-## Docker/Singularity utilities
+## Docker/Singularity 
 
 ### Docker deployment
 
