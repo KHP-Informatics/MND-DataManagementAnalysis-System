@@ -67,7 +67,7 @@ https://github.com/chapmanb/bcbio-nextgen
 ## iRODS  
 
 The following sections will give the user a quick how-to-get-started guide for iRODS
-For more complete instructions and details please read either the iRODS manual or this [tutorial](https://irods.org/uploads/2016/06/irods_beginner_training_2016.pdf)
+For more complete instructions and details please read either the iRODS [manual](https://docs.irods.org/4.2.0/) or this [tutorial](https://irods.org/uploads/2016/06/irods_beginner_training_2016.pdf)
 
 ### iRODS deployment
 
