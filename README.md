@@ -68,7 +68,7 @@ https://github.com/chapmanb/bcbio-nextgen
 
 The following sections will give the user a quick how-to-get-started guide for iRODS. For more complete instructions and details please read either the iRODS [manual](https://docs.irods.org/4.2.0/) or this [tutorial](https://irods.org/uploads/2016/06/irods_beginner_training_2016.pdf)
 
-**VERY IMPORTANT**: the following set up can be used for educational/fun deplyments. For a production deplyment a few tweaks are necessary. These can be found [here](www.tweaks.com)
+**VERY IMPORTANT**: the following set up can be used for educational/fun deployments. For a production deployment a few tweaks are necessary. These can be found [here](www.tweaks.com)
 
 ### iRODS deployment (ubuntu)
 
@@ -125,6 +125,14 @@ Finally set up your iRODS zone. After running the following script you will be a
 ```bash
 $ sudo python /var/lib/irods/scripts/setup_irods.py
 ```
+
+#### Dockerized iRODS
+
+An iRODS iCAT server can be deplyed very quickly using [Docker](https://www.docker.com)
+
+Please follow the instruction you can find [here](https://github.com/KHP-Informatics/MNDA-DataManagement-System/tree/master/irods-docker)
+
+
 ### iRODS tutorial
 
  [tutorial](https://irods.org/uploads/2016/06/irods_beginner_training_2016.pdf)
