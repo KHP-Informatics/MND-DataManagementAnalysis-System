@@ -112,8 +112,20 @@ $ sudo apt-get update
 
 ```
 
+Then install the core server software:
 
+```bash
+$ sudo apt-get -y install irods-server irods-database-plugin-postgres
+```
+
+Finally set up your iRODS zone. After running the following script you will be asked a series of questions. Default values can be found in this [table](https://github.com/KHP-Informatics/MNDA-DataManagement-System/blob/master/Screen_irods.png) 
+
+```bash
+$ sudo python /var/lib/irods/scripts/setup_irods.py
+```
 ### iRODS tutorial
+
+ [tutorial](https://irods.org/uploads/2016/06/irods_beginner_training_2016.pdf)
 
 ### iRODS rules
 
