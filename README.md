@@ -2,6 +2,8 @@
 
 # MNDA-DataManagement-System
 
+    This project is a collaboration between researchers working in motor neuron disease, and computer scientists working with biological information
+
 ## DANM system
 
 This is the main repository of our Data ANalysis and Management (DANM) system for ALS research. Our framework aims to deal with the new challenges that ALS researchers are facing nowadays . Indeed Genetic technology is advancing rapidly. We now have the ability to quickly and cheaply collect huge amounts of genetic information, and because of close collaboration between research groups, to do this in tens of thousands of people. How to store, handle and easily share this information might represent overwhelming challenges. The aim of our DANM framework is to make all members of our research community able to deal with these aspects of our research in order to speed up our studies, make them more reliable and reproducible.
