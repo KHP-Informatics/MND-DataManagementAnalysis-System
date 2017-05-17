@@ -68,11 +68,13 @@ https://github.com/chapmanb/bcbio-nextgen
 
 The following sections will give the user a quick how-to-get-started guide for iRODS. For more complete instructions and details please read either the iRODS [manual](https://docs.irods.org/4.2.0/) or this [tutorial](https://irods.org/uploads/2016/06/irods_beginner_training_2016.pdf)
 
-### iRODS deployment
+### iRODS deployment (ubuntu)
 
 An iRODS deployment, or Zone, is composed of at least an iRODS Metadata Catalog (iCAT) database. Here we will use PostgreSQL to implement an iCAT database.
 
-#### installing and setting up the postgres iCAT database
+Both iRODS software and PostgreSQL can be installed via the native operating system’s package manager. For Ubuntu, this is named apt
+
+#### Installing and setting up the postgres iCAT database
 
 ```bash
 $ sudo apt-get update   #update apt-get
@@ -94,6 +96,21 @@ $ psql  #Start the PostgreSQL command console
 $ exit  #switch back to your user
 ```
 
+#### Installing iRODS Software Packages
+
+The first thing to do would be to install the RENCI repository that hosts the iRODS software and update apt
+To be noted that this repository only has iRODS versions for ubuntu xenial (16.04), trusty (14.04) and precise (12.04). 
+
+If you are using a different version please replace $(lsb_release -sc) with one of these three supported realeses. E.g. if your ubuntu is 14.10, replace $(lsb_release -sc) with "trusty"
+
+```bash
+$ wget -qO - https://unstable.irods.org/irods-unstable-signing-key.asc | \ sudo apt-key add -
+
+$ echo "deb [arch=amd64] https://unstable.irods.org/apt/ \ $(lsb_release -sc) main" | sudo tee \ /etc/apt/sources.list.d/renci-irods-unstable.list
+
+$ sudo apt-get update
+
+```
 
 
 ### iRODS tutorial
