@@ -21,7 +21,7 @@ Please contact us for help/guidance on using our framework.
 ## Project plan
 
 We are implementing a solution that will enable sharing, analysing and storing of each of the 1-4 levels of omics and associated data: Level 1 data refers to the data in its raw, non-normalised form, levels 2 and 3 represent data at different stages of processing and level 4 represents summary results data (https://wiki.nci.nih.gov/display/TCGA/Data+level#Datalevel- DataLevelClassification).
-A number of different challenges and requirements exist when considering each level. For level 1-2 data a file system such as iRODS (Integrated Rule-Orientated Data system,https://www.irods.org/) can be used, whereas Level 3 and 4 data, along with the clinical data, will be loaded into a knowledge platform such as tranSMART(http://www.transmartproject.org). 
+A number of different challenges and requirements exist when considering each level. For level 1-2 data a file system such as iRODS (Integrated Rule-Orientated Data system,https://www.irods.org/) can be used, whereas Level 3 and 4 data, along with the clinical data, will be loaded into a knowledge platform such as tranSMART(http://transmartfoundation.org). 
 
 ### Development of iRODS file storage system for level 1-2 data
 
