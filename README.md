@@ -166,15 +166,31 @@ Please follow the instruction you can find [here](https://github.com/KHP-Informa
 
 ### tranSMART deployment
 
+Since TranSMART consists of multiple services, docker-compose is used to build images for the different services and manage the links between them [LINK](https://github.com/KHP-Informatics/MNDA-DataManagement-System/tree/master/transmart-docker). We recomend using docker and docker compose for the platform deplyment.
+
 ### tranSMART tutorial
+
+[LINK](http://transmartfoundation.org/transmart-platform-tutorials/)
 
 ### tranSMART extras
 
 ## Docker/Singularity 
 
-### Docker deployment
+### Docker setup
 
-### Singularity deployment
+#### ubuntu
+
+[LINK](https://store.docker.com/editions/community/docker-ce-server-ubuntu)
+
+#### MAC
+
+[LINK](https://store.docker.com/editions/community/docker-ce-desktop-mac)
+
+#### Windows
+
+[LINK](https://store.docker.com/editions/community/docker-ce-desktop-windows)
+
+### Singularity setup
 
 ### Docker/Singularity extras
 
