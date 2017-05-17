@@ -31,6 +31,8 @@ iRODS allows to deal with distributed network of data repositories as the ALS re
 An iRODS data browser is available at the address http://52.202.127.9:8552/irods-cloud-frontend/ 
 This browser allows to log in any iRODS. The following credentials allow to log in into a sample iRODS zone based onto Rosalind (our King's/MRC HPC cluster) 
 
+![alt text](https://github.com/KHP-Informatics/MNDA-DataManagement-System/blob/master/Screen.png)
+
 
 
 ### Development of TranSMART open source knowledge platform for level 3 and 4 data, with integration of clinical information
