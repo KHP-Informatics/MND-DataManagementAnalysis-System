@@ -125,10 +125,27 @@ Finally set up your iRODS zone. After running the following script you will be a
 ```bash
 $ sudo python /var/lib/irods/scripts/setup_irods.py
 ```
+### Installing iRODS using a bash script
 
-#### Dockerized iRODS
+If sudo priviledges are owned, an iRODS iCAT server (irods 4.1.3) can be deployed very quickly using a bash script. 
 
-An iRODS iCAT server can be deplyed very quickly using [Docker](https://www.docker.com)
+
+```bash 
+$ wget https://github.com/KHP-Informatics/MNDA-DataManagement-System/raw/master/irods_bash_installation.zip
+
+$ unzip https://github.com/KHP-Informatics/MNDA-DataManagement-System/raw/master/irods_bash_installation.zip
+
+$ cd irods_bash_installation
+
+$ sudo ./irods_installation.sh
+
+```
+The responses for setup script can be found in /opt/irods/setup_responses 
+
+
+### Dockerized iRODS
+
+An iRODS iCAT server (irods 4.1.3) can be deployed very quickly using [Docker](https://www.docker.com)
 
 Please follow the instruction you can find [here](https://github.com/KHP-Informatics/MNDA-DataManagement-System/tree/master/irods-docker)
 
