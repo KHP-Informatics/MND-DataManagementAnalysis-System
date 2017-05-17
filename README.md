@@ -75,21 +75,23 @@ An iRODS deployment, or Zone, is composed of at least an iRODS Metadata Catalog 
 #### installing and setting up the postgres iCAT database
 
 ```bash
-$ sudo apt-get update
+$ sudo apt-get update   #update apt-get
 
-$ sudo apt-get -y install postgresql
+$ sudo apt-get -y install postgresql    #install postgresql
 
-$ psql  #Start the PostgreSQL command console:
+$ sudo su - postgres    #switch to the postgres user
 
-> CREATE DATABASE "ICAT";   #Let’s create the database to be used by iRODS:
+$ psql  #Start the PostgreSQL command console
 
-> CREATE USER irods WITH PASSWORD 'testpassword'; #Create the PostgreSQL user account to be used by iRODS
+> CREATE DATABASE "ICAT";   #create the iCAT database
 
-> GRANT ALL PRIVILEGES ON DATABASE "ICAT" to irods; #Give the iRODS PostgreSQL user account permission to use the database
+> CREATE USER irods WITH PASSWORD 'testpassword'; #Create the database user account to be used by iRODS
 
-> \q    #Log out of the PostgreSQL command console:
+> GRANT ALL PRIVILEGES ON DATABASE "ICAT" to irods; #Give user account permission to use the database
 
-$ exit  #Log out of the Linux user account—postgres—that controls the PostgreSQL server software
+> \q    #Log out the console
+
+$ exit  #switch back to your user
 ```
 
 
