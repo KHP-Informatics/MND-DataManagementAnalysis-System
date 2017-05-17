@@ -66,10 +66,31 @@ https://github.com/chapmanb/bcbio-nextgen
 
 ## iRODS  
 
-The following sections will give the user a quick how-to-get-started guide for iRODS
-For more complete instructions and details please read either the iRODS [manual](https://docs.irods.org/4.2.0/) or this [tutorial](https://irods.org/uploads/2016/06/irods_beginner_training_2016.pdf)
+The following sections will give the user a quick how-to-get-started guide for iRODS. For more complete instructions and details please read either the iRODS [manual](https://docs.irods.org/4.2.0/) or this [tutorial](https://irods.org/uploads/2016/06/irods_beginner_training_2016.pdf)
 
 ### iRODS deployment
+
+An iRODS deployment, or Zone, is composed of at least an iRODS Metadata Catalog (iCAT) database. Here we will use PostgreSQL to implement an iCAT database.
+
+#### installing and setting up the postgres iCAT database
+
+```bash
+$ sudo apt-get update
+
+$ sudo apt-get -y install postgresql
+
+$ psql  #Start the PostgreSQL command console:
+
+> CREATE DATABASE "ICAT";   #Let’s create the database to be used by iRODS:
+
+> CREATE USER irods WITH PASSWORD 'testpassword'; #Create the PostgreSQL user account to be used by iRODS
+
+> GRANT ALL PRIVILEGES ON DATABASE "ICAT" to irods; #Give the iRODS PostgreSQL user account permission to use the database
+
+> \q    #Log out of the PostgreSQL command console:
+
+$ exit  #Log out of the Linux user account—postgres—that controls the PostgreSQL server software
+```
 
 
 
