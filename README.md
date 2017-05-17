@@ -28,6 +28,8 @@ A number of different challenges and requirements exist when considering each le
 iRODS is an integrated Rule-Oriented Data System, developed to build distributed storage infrastructure. Several iRODS servers in different locations can share their data through automatic mechanisms based on internal rules. But iRODS is also useful to provide users with a remote storage area supporting large files, large numbers of files and identity management. Although we propose to centralise data for this project, it provides us with the capability to build a federated system if this is preferred by the ALS stakeholder advisory group. The approach will enable us to handle diverse data types, provide controlled fine grained access controls, add/remove data/users/partners/different infrastructure. It is being widely adopted by institutes such as the BROAD Institute and Sanger Centre for managing highly dimensional data, typical of modern genomic datasets and is particularly important as these datasets are not managed well by standard relational database management systems.
 iRODS allows to deal with distributed network of data repositories as the ALS research network. Throw data federation it would allow an easy data access and sharing across the international research community favouring collaborations. In this repository we provide instructions and tools to set up an iRODS data management system in a few easy steps.
 
+We also provide a set of ALS research specific microservices/rules to allow the researcher to exploit iRODS metadata and rule engine services (work in progress)
+
 [An iRODS data browser](https://github.com/KHP-Informatics/MNDA-DataManagement-System/tree/master/irods-cloud-browser-1.0.1-RELEASE) is available at the address http://52.202.127.9:8552/irods-cloud-frontend/ 
 This browser allows to log in and explore any iRODS zone. The following credentials allow to log in into a sample iRODS zone based onto Rosalind (our King's/MRC HPC cluster) 
 
@@ -39,19 +41,47 @@ This browser allows to log in and explore any iRODS zone. The following credenti
 
 The TranSMART system is a platform for translational medicine comprising a relational database back end and a web based interface that integrates a large number of open source bioinformatics tools for analysis and visualisation, including GenePattern for expression analysis, Plink for genetic analysis, Galaxy, R and add on statistical packages (box plot with ANOVA, Fisher test, k-means clustering and others). The system, originally developed by Johnson & Johnson and based on i2b2 technology, has recently been released under an open source license and is being widely adopted and developed by the open source community. It is the tool of choice for many EU projects integrating clinical and omics datasets across Europe and beyond. This platform will provide general user access to processed data and will enable cohort selection and analyses on the fly. For example, it allows a user to select a subset of patients, filtered on clinical and phenotypic variables such as age, gender, age of onset and genotype, then perform an analysis such as a differential expression analysis, or extract a subset a selection of genotypes and visualise the results.
 
-### Data analysis and analysis reproducibility tools
+## Data analysis and analysis reproducibility tools
 
-Bioinformatics is speeding up genetic research showing great prospectives. Unfortunately bioinformatics due to the nature of this field, its tools and pipelines often lack in maintenance and user friendly interfaces. This often results in performance inconsistence among different versions of the same tool and an unreliable availability of stable versions of "old" tools. Moreover, their use and deployment often requires IT skills way beyond the average user. This is particularly true in medical/biology research environment as the ALS research is. For this reasons this section aims to provide tools able to automatise the deployment and use of bioinformatics tools. 
-We aim to develop a very user friendly interface for these tools (a web server) able to interactively create stand-alone deployments of bioinformatics pipelines according to the user needs. (work in progress...) 
+Bioinformatics is speeding up genetic research showing great prospectives. Unfortunately due to the nature of this field, its tools and pipelines often lack in maintenance effort and user friendly interfaces. This might result in performance inconsistence among different versions of the same tool and unreliable availability of "old" tools stable versions. Moreover, their use and deployment often requires informatics skills way beyond the average user. This is particularly true in a medical/biology research environment as the ALS research is. This section wants to provide tools able to automatise the deployment and use of bioinformatics pipelines. 
+We aim to develop a super user friendly interface for these tools (a web server) able to interactively create, using technologies such as Docker and Singularity, stand-alone and portable deployments of bioinformatics pipelines according to the user needs. (work in progress...) 
 
-#### NGSeasy
+### NGSeasy
 
 NGSeasy is a flexible and easy-to-use NGS pipeline for automated alignment, quality control, variant calling and annotation. The pipeline allows users with minimal computational/bioinformatic skills to set up and run an NGS analysis on their own samples, in less than an afternoon, on any operating system (Windows, iOS or Linux) or infrastructure (workstation, cluster or cloud). 
 
 https://github.com/KHP-Informatics/MNDA-DataManagement-System/tree/master/ngseasy
 
-#### bcbio
+### bcbio
 
 A python toolkit providing best-practice pipelines for fully automated high throughput sequencing analysis. You write a high level configuration file specifying your inputs and analysis parameters. This input drives a parallel pipeline that handles distributed execution, idempotent processing restarts and safe transactional steps. The goal is to provide a shared community resource that handles the data processing component of sequencing analysis, providing researchers with more time to focus on the downstream biology.
 
 https://github.com/chapmanb/bcbio-nextgen
+
+## iRODS utilities 
+
+### iRODS deployment
+
+### iRODS rules
+
+### iRODS microsevices
+
+### iRODS extras
+
+## tranSMART utilities
+
+### tranSMART deployment
+
+### tranSMART tutorial
+
+### tranSMART extras
+
+## Docker/Singularity utilities
+
+### Docker deployment
+
+### Singularity deployment
+
+### Docker/Singularity extras
+
+## Extras
