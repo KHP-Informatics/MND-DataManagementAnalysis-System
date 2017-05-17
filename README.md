@@ -103,7 +103,7 @@ $ exit  #switch back to your user
 The first thing to do would be to install the RENCI repository that hosts the iRODS software and update apt
 To be noted that this repository only has iRODS versions for ubuntu xenial (16.04), trusty (14.04) and precise (12.04). 
 
-If you are using a different version please replace $(lsb_release -sc) with one of these three supported realeses. E.g. if your ubuntu is 14.10, replace $(lsb_release -sc) with "trusty"
+If you are using a different version please replace $(lsb_release -sc) with one of these three supported releases. E.g. if your ubuntu is 14.10, replace $(lsb_release -sc) with "trusty"
 
 ```bash
 $ wget -qO - https://unstable.irods.org/irods-unstable-signing-key.asc | \ sudo apt-key add -
@@ -127,7 +127,7 @@ $ sudo python /var/lib/irods/scripts/setup_irods.py
 ```
 ### Installing iRODS using a bash script
 
-If sudo priviledges are owned, an iRODS iCAT server (irods 4.1.3) can be deployed very quickly using a bash script. 
+If sudo privileges are owned, an iRODS iCAT server (irods 4.1.3) can be deployed very quickly using a bash script. 
 
 
 ```bash 
@@ -166,7 +166,7 @@ Please follow the instruction you can find [here](https://github.com/KHP-Informa
 
 ### tranSMART deployment
 
-Since TranSMART consists of multiple services, docker-compose is used to build images for the different services and manage the links between them [LINK](https://github.com/KHP-Informatics/MNDA-DataManagement-System/tree/master/transmart-docker). We recomend using docker and docker compose for the platform deplyment.
+Since TranSMART consists of multiple services, docker-compose is used to build images for the different services and manage the links between them [LINK](https://github.com/KHP-Informatics/MNDA-DataManagement-System/tree/master/transmart-docker). We recommend using docker and docker compose for the platform deployment.
 
 ### tranSMART tutorial
 
@@ -176,9 +176,9 @@ Since TranSMART consists of multiple services, docker-compose is used to build i
 
 ## Docker/Singularity 
 
-**Docker** is an open-source project that automates the deployment of applications inside software containers. Using containers to deploy our system and creating our analysis environment would allow us to make our work independent by the machine we work on. This would improve the reproducibility of our science, the portability and rialability of our deployments and avoid any machine specific issues. For this reason working using containers isn't just recomended but also makes things easier. Since docker is widely used and maintaned we recomend it as container technology to use if possible. Unfortunately Docker does require sudo priviledges to run its containers making its use difficult on HPC facilities.
+**Docker** is an open-source project that automates the deployment of applications inside software containers. Using containers to deploy our system and creating our analysis environment would allow us to make our work independent by the machine we work on. This would improve the reproducibility of our science, the portability and reliability of our deployments and avoid any machine specific issues. For this reason working using containers isn't just recommended but also makes things easier. Since docker is widely used and maintained we recommend it as container technology to use if possible. Unfortunately Docker does require sudo privileges to run its containers making its use difficult on HPC facilities.
 
-**Singularity** is also a container project similar to Docker and does not require sudo priviledges to run. This can be very important if you decide to use our framework on a machine for which you do not have such priviledges. E.g. your institution HPC cluster. In this case you create your docker deployment locally and then converting the docker image into a singularoty image using this [script](https://github.com/KHP-Informatics/MNDA-DataManagement-System/blob/master/docker-utilities/import_to_container.sh)
+**Singularity** is also a container project similar to Docker and does not require sudo privileges to run. This can be very important if you decide to use our framework on a machine for which you do not have such privileges. E.g. your institution HPC cluster. In this case you create your docker deployment locally and then converting the docker image into a singularoty image using this [script](https://github.com/KHP-Informatics/MNDA-DataManagement-System/blob/master/docker-utilities/import_to_container.sh)
 
 ```bash 
 $ ./import_to_container.sh  <containerID> <path_to_folder_to_import> <path_to_folder_to_destination>
