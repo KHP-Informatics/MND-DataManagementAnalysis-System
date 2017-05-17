@@ -2,7 +2,11 @@
 
 # MNDA-DataManagement-System
 
-    This project is a collaboration between researchers working in motor neuron disease, and computer scientists working with biological information
+    This project is a collaboration between researchers working in motor neuron disease, and computer 
+    scientists working with biological information. We would welcome anybody bringing up their own 
+    issues, experience or suggestions. We wish the whole ALS research community to partecipate and 
+    guide this project development. Please contact us via email (alfredo.iacoangeli@kcl.ac.uk) or 
+    post a message in the [issue blog](https://github.com/KHP-Informatics/MNDA-DataManagement-System/issues)
 
 ## DANM system
 
