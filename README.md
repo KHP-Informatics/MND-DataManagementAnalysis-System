@@ -14,5 +14,5 @@ Please contact us for help/guidance on using our framework.
 
 |Author|email|Twitter| LinkedIn|
 |----|----|----|----|
-|Dr Alfredo IAcoangeli| <alfredo.iacoangeli@kcl.ac.uk>| 
+|Dr Alfredo Iacoangeli| <alfredo.iacoangeli@kcl.ac.uk>| 
 |Dr Stephen J Newhouse| <stephen.j.newhouse@gmail.com>| [@s_j_newhouse](https://twitter.com/s_j_newhouse?lang=en)| View Steve's profile on [LinkedIn](http://uk.linkedin.com/pub/dr-stephen-newhouse/29/89a/11a)|
