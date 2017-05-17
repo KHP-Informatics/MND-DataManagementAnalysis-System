@@ -62,11 +62,15 @@ https://github.com/chapmanb/bcbio-nextgen
 
 ### iRODS deployment
 
+### iRODS tutorial
+
 ### iRODS rules
 
-### iRODS microsevices
+### iRODS microservices
 
 ### iRODS extras
+
+### Metadata
 
 ## tranSMART utilities
 
