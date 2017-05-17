@@ -176,6 +176,14 @@ Since TranSMART consists of multiple services, docker-compose is used to build i
 
 ## Docker/Singularity 
 
+**Docker** is an open-source project that automates the deployment of applications inside software containers. Using containers to deploy our system and creating our analysis environment would allow us to make our work independent by the machine we work on. This would improve the reproducibility of our science, the portability and rialability of our deployments and avoid any machine specific issues. For this reason working using containers isn't just recomended but also makes things easier. Since docker is widely used and maintaned we recomend it as container technology to use if possible. Unfortunately Docker does require sudo priviledges to run its containers making its use difficult on HPC facilities.
+
+**Singularity** is also a container project similar to Docker and does not require sudo priviledges to run. This can be very important if you decide to use our framework on a machine for which you do not have such priviledges. E.g. your institution HPC cluster. In this case you create your docker deployment locally and then converting the docker image into a singularoty image using this [script](https://github.com/KHP-Informatics/MNDA-DataManagement-System/blob/master/docker-utilities/import_to_container.sh)
+
+```bash 
+$ ./import_to_container.sh  <containerID> <path_to_folder_to_import> <path_to_folder_to_destination>
+```
+
 ### Docker setup
 
 #### ubuntu
@@ -191,6 +199,14 @@ Since TranSMART consists of multiple services, docker-compose is used to build i
 [LINK](https://store.docker.com/editions/community/docker-ce-desktop-windows)
 
 ### Singularity setup
+
+#### Linux
+
+[LINK](http://singularity.lbl.gov/install-linux)
+
+#### MAC
+
+[LINK](http://singularity.lbl.gov/install-mac)
 
 ### Docker/Singularity extras
 
