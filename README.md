@@ -68,6 +68,8 @@ https://github.com/chapmanb/bcbio-nextgen
 
 The following sections will give the user a quick how-to-get-started guide for iRODS. For more complete instructions and details please read either the iRODS [manual](https://docs.irods.org/4.2.0/) or this [tutorial](https://irods.org/uploads/2016/06/irods_beginner_training_2016.pdf)
 
+**VERY IMPORTANT**: the following set up can be used for educational/fun deplyments. For a production deplyment a few tweaks are necessary. These can be found [here](www.tweaks.com)
+
 ### iRODS deployment (ubuntu)
 
 An iRODS deployment, or Zone, is composed of at least an iRODS Metadata Catalog (iCAT) database. Here we will use PostgreSQL to implement an iCAT database.
