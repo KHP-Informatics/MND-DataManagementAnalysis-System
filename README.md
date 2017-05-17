@@ -1,6 +1,6 @@
 ![alt text](https://github.com/KHP-Informatics/MNDA-DataManagement-System/blob/master/danm_logo.001.jpeg)
 
-# MNDA-DataManagement-System
+# MNDA-DataAnalysis&Management-System
 
     This project is a collaboration between researchers working in motor neuron disease, and computer 
     scientists working with biological information. We would welcome anybody bringing up their own 
