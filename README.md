@@ -6,7 +6,7 @@
     scientists working with biological information. We would welcome anybody bringing up their own 
     issues, experience or suggestions. We wish the whole ALS research community to partecipate and 
     guide this project development. Please contact us via email (alfredo.iacoangeli@kcl.ac.uk) or 
-    post a message in the [issue blog](https://github.com/KHP-Informatics/MND-DataManagementAnalysis-System/issues) 
+    post a message in the issue blog (https://github.com/KHP-Informatics/MND-DataManagementAnalysis-System/issues) 
 
 ## Description
 
