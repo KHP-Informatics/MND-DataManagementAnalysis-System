@@ -72,8 +72,6 @@ When sending bug reports etc please provide:-
 - your config file  
 - The exact error as printed to screen
 
-**WARNING!**
-NGSeasy is not [numpty](http://www.urbandictionary.com/define.php?term=Numpty) or bad data proof!  
 
 **Please read the docs**, stay calm, take your time and think about what you are doing...and if [www.google.com] doesnt help, then please direct all queries to [https://github.com/KHP-Informatics/ngseasy/issues].
 
