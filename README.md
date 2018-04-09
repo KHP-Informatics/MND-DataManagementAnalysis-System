@@ -110,9 +110,9 @@ To be noted that this repository only has iRODS versions for ubuntu xenial (16.0
 If you are using a different version please replace $(lsb_release -sc) with one of these three supported releases. E.g. if your ubuntu is 14.10, replace $(lsb_release -sc) with "trusty"
 
 ```bash
-$ wget -qO - https://unstable.irods.org/irods-unstable-signing-key.asc | \ sudo apt-key add -
+$ wget -qO - https://unstable.irods.org/irods-unstable-signing-key.asc |  sudo apt-key add -
 
-$ echo "deb [arch=amd64] https://unstable.irods.org/apt/ \ $(lsb_release -sc) main" | sudo tee \ /etc/apt/sources.list.d/renci-irods-unstable.list
+$ echo "deb [arch=amd64] https://unstable.irods.org/apt/ $(lsb_release -sc) main" | sudo tee - /etc/apt/sources.list.d/renci-irods-unstable.list
 
 $ sudo apt-get update
 
